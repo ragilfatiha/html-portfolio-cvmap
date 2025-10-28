@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio CV. Mahardika Agro Pratama</title>
+    <style>
+        /* Skema Warna Pertanian */
+        :root {
+            --green-primary: #38761d; /* Hijau Tua/Daun */
+            --green-accent: #93c47d; /* Hijau Muda/Aksen */
+            --earth-tone: #f4f0e6;   /* Krem/Tanah Muda */
+            --text-color: #333;
+            --white: #fff;
+        }
+
+        /* CSS Dasar */
+        body {
+            font-family: 'Georgia', serif; /* Font klasik untuk nuansa alam */
+            margin: 0;
+            padding: 0;
+            background-color: var(--earth-tone);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Header & Navigasi */
+        header {
+            background-color: var(--green-primary);
+            color: var(--white);
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--green-accent);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-style: italic;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--green-accent);
+        }
+
+        /* Tombol Dasar */
+        .btn {
+            display: inline-block;
+            background-color: var(--green-accent);
+            color: var(--green-primary);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            border: 2px solid var(--green-primary);
+        }
+
+        .btn:hover {
+            background-color: var(--green-primary);
+            color: var(--white);
+        }
+        .btn-1 {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--green-primary);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            border: 2px solid var(--green-primary);
+        }
+
+        .btn-1:hover {
+            background-color: var(--green-accent);
+            color: var(--green-primary);
+        }
+
+        /* Bagian Umum */
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--green-primary);
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        /* Bagian Hero */
+        .hero {
+            background-color: var(--white);
+            padding: 80px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            color: #555;
+            max-width: 800px;
+            margin: 20px auto 30px;
+        }
+        
+        /* Bagian Sektor (Grid) */
+        .sektor {
+            background-color: var(--earth-tone);
+        }
+
+        .sektor-grid {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .sektor-item {
+            flex-basis: 45%;
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s;
+        }
+        
+        .sektor-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .sektor-item h3 {
+            color: var(--green-primary);
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--green-accent);
+            padding-bottom: 10px;
+        }
+
+        .sektor-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sektor-item ul li {
+            padding: 5px 0;
+            border-left: 3px solid var(--green-accent);
+            padding-left: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* Bagian Kontak */
+        .contact {
+            background-color: var(--green-primary);
+            color: var(--white);
+            padding: 40px 0;
+        }
+
+        .contact p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: var(--white);
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsif Dasar */
+        @media (max-width: 768px) {
+            .sektor-grid {
+                flex-direction: column;
+            }
+
+            .sektor-item {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+
+            .hero h2 {
+                font-size: 2.5em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Mahardika Agro Pratama</h1>
+            <p>"Kualitas Tumbuh dari Bumi"</p>
+            <nav>
+<!--
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#pertanian">Pertanian</a></li>
+                    <li><a href="#peternakan">Peternakan</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+-->
+            </nav>
+        </div>
+    </header>
+    
+    <section id="beranda" class="hero">
+        <div class="container">
+            <h2>Penyedia Agribisnis Terpercaya</h2>
+            <p>Kami adalah mitra andal dalam produksi dan distribusi sayuran segar serta komoditas peternakan berkualitas tinggi.</p>
+            <a href="wa.me/6281329961590" class="btn">HUBUNGI UNTUK KERJASAMA</a>
+        </div>
+    </section>
+
+    <section id="sektor" class="sektor">
+        <div class="container">
+            <h2>Portofolio Utama Kami</h2>
+            <div class="sektor-grid">
+                
+                <div id="pertanian" class="sektor-item">
+                    <h3>Sektor Pertanian Sayuran</h3>
+                    <p>Fokus pada budidaya sayuran premium dengan sistem pertanian modern dan ramah lingkungan.</p>
+                    <ul>
+                        <li><span style="font-weight: bold;">Komoditas Unggulan:</span> Jagung, Tomat, Cabai, Sawi, Kangkung.</li>
+                        <li><span style="font-weight: bold;">Sertifikasi:</span> GAP (Good Agricultural Practices).</li>
+                        <li><span style="font-weight: bold;">Distribusi:</span> Suplai rutin ke pasar modern dan katering sehat.</li>
+                    </ul>
+                    <!--<a href="#kontak" class="btn">Lihat Produk Sayur</a>-->
+                </div>
+
+                <div id="peternakan" class="sektor-item">
+                    <h3>Sektor Peternakan Komoditas</h3>
+                    <p>Menghasilkan produk peternakan berkualitas tinggi, menjamin kesehatan dan kesejahteraan ternak.</p>
+                    <ul>
+                        <li><span style="font-weight: bold;">Komoditas Unggulan:</span> Telur Ayam Omega-3, Daging Ayam Broiler Sehat, Lele Konsumsi.</li>
+                        <li><span style="font-weight: bold;">Standar:</span> Kandang tertutup (Close House) dan pakan alami.</li>
+                        <li><span style="font-weight: bold;">Jaminan:</span> Bebas antibiotik dan bahan kimia berbahaya.</li>
+                    </ul>
+                    <!--<a href="#kontak" class="btn">Lihat Produk Ternak</a>-->
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2><font color="#fff">Tertarik Bermitra dengan Kami?</font></h2>
+            <p>Hubungi tim pemasaran Mahardika Agro Pratama untuk informasi suplai dan kemitraan.</p>
+            <p><strong>WA/Telp:</strong> 0813-2996-1590</p>
+            <!--<p><strong>Email:</strong> mahardika.agro@email.com</p>-->
+            <p>Jl. Raya Wiradesa - Bojong, Gumawang No. 538 </p>
+            <a href="wa.me/6281329961590" class="btn-1">WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mahardika Agro Pratama. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
